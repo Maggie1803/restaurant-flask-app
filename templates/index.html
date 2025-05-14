@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Management System</h1>
+        <form action="/submit" method="POST">
+            <label>Customer Name: <input type="text" name="customer"></label>
+            <label>Food Item: <input type="text" name="item"></label>
+            <label>Quantity: <input type="number" name="quantity"></label>
+            <button type="submit">Add Order</button>
+        </form>
+        {% if message %}
+            <p class="message">{{ message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+ 

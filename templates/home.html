@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Management System</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            background: white;
+            display: inline-block;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+        input, select {
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+        }
+        input[type="submit"] {
+            width: auto;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Restaurant</h1>
+    <form method="POST" action="/order">
+        <label>Item Name:</label><br>
+        <input type="text" name="item" required><br>
+
+        <label>Quantity:</label><br>
+        <input type="number" name="quantity" required><br>
+
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
